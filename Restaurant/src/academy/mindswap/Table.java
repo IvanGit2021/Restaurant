@@ -12,13 +12,17 @@ public class Table {
     public boolean isFree() {
         return isFree;
     }
-    public void setFree(boolean free) {
-        isFree = free;
-    }
     public String getOrder() {
         return order;
     }
     public void setOrder(String order) {
         this.order = order;
+    }
+    public void saveOrder() {}
+    public boolean occupy() {
+        return isFree = false;
+    }
+    public boolean unnocupy() {
+        return isFree = true;
     }
 }
